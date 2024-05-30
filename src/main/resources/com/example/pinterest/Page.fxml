@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pinterest.Page">
+   <children>
+      <Pane layoutX="13.0" layoutY="76.0" prefHeight="420.0" prefWidth="802.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <children>
+            <Pane layoutX="21.0" layoutY="33.0" prefHeight="372.0" prefWidth="308.0" style="-fx-background-radius: 10; -fx-background-color: black;">
+               <children>
+                  <ImageView fitHeight="385.0" fitWidth="308.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Screenshot%202024-02-20%20193538.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="saveBtn" layoutX="714.0" layoutY="22.0" mnemonicParsing="false" onAction="#save" prefHeight="43.0" prefWidth="74.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="Save" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="639.0" layoutY="30.0" text="Profile v " textFill="#070404">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="followBtn" layoutX="698.0" layoutY="115.0" mnemonicParsing="false" onAction="#follow" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #e4e4e4; -fx-background-radius: 100;" text="Follow">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="365.0" layoutY="174.0" text="Comments">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Circle fill="#e4e4e4" layoutX="401.0" layoutY="137.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="395.0" layoutY="122.0" text="S">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="422.0" layoutY="116.0" text="Soroush Khar" textFill="#070404">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="427.0" layoutY="141.0" text="1.2K followers" />
+            <Line endX="360.0" layoutX="437.0" layoutY="301.0" opacity="0.22" startX="-100.0" />
+            <Label layoutX="345.0" layoutY="310.0" text="1 comment">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="commentField" layoutX="406.0" layoutY="362.0" prefHeight="33.0" prefWidth="308.0" promptText="Add a comment" style="-fx-background-radius: 20; -fx-background-color: white; -fx-border-color: gray; -fx-border-radius: 20;" />
+            <Circle fill="#e4e4e4" layoutX="380.0" layoutY="379.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="372.0" layoutY="364.0" text="H">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="684.0" layoutY="366.0" text="😀" textFill="#170e0e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <ScrollPane hbarPolicy="NEVER" layoutX="364.0" layoutY="192.0" prefHeight="102.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-color: white;">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="98.0" prefWidth="423.0" />
+               </content>
+            </ScrollPane>
+            <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="382.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons8-upload-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="423.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons8-more-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="743.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons8-heart-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="374.0" layoutY="82.0" text="Soroush">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="717.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons8-send-50.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="713.0" layoutY="366.0" onAction="#addComment" opacity="0.0" text="      " />
+         </children>
+      </Pane>
+      <Pane layoutX="12.0" layoutY="2.0" prefHeight="63.0" prefWidth="802.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <children>
+            <TextField layoutX="183.0" layoutY="14.0" prefHeight="33.0" prefWidth="437.0" promptText="⌕ Search" style="-fx-background-color: #f2f2f2; -fx-background-radius: 20;" />
+            <Hyperlink layoutX="127.0" layoutY="17.0" text="Create" textFill="#070404">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="73.0" layoutY="17.0" text="Home " textFill="#070404">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Circle fill="#e4e4e4" layoutX="767.0" layoutY="30.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="759.0" layoutY="15.0" text="H">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="33.0" fitWidth="52.0" layoutX="698.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons8-comment-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="648.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons8-alert-32.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../social_pinterest_icon_131227%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
